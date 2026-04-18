@@ -1,6 +1,9 @@
-package main
+package hello
 
-import "testing"
+import (
+	"fmt"
+	"testing"
+)
 
 func TestGreeting(t *testing.T) {
 
@@ -12,6 +15,11 @@ func TestGreeting(t *testing.T) {
 	}
 }
 
+func Examplegreeting() {
+
+	fmt.Println(greeting())
+	// Output: Hello, World!
+}
 func TestGreeting_recipient(t *testing.T) {
 
 	got := greeting_recipirnt("Khalil")
